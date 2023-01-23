@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularapp';
+  title = 'Calory Tracker';
+  totalCalories :number;
+  receiveTotalCalories($event){
+    this.totalCalories = $event;
+
+  }
 }

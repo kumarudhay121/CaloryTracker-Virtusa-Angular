@@ -1,0 +1,76 @@
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .search-food{
+    align-items: center;
+    text-align: center;
+  }
+  
+  h2 span{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+  
+  }
+  
+  button{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: 0;
+  }
+  
+  li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    list-style: none;
+    border: 1px solid grey;
+    width: 700px;
+    height: 180px;
+    margin: 2em;
+  }
+  
+  ul {
+    margin-left: 20%;
+  }
+  
+  .color {
+    color: red;
+  }
+  
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .add-btn {
+    background-color: orangered;
+    color: white;
+    border-radius: 0px;
+    padding: 0.5em;
+    width: 60px;
+    height: 30px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  input {
+    font-size: 16px;
+    height: 30px;
+    width: 350px;
+    border: 1px solid gray;
+  }
+  .display-food-container
+  {
+    display: flex;
+    justify-content: flex-end;
+    background-color: aliceblue;
+    color: black;
+  }
+  

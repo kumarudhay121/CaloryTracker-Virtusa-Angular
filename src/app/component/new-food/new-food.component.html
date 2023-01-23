@@ -1,0 +1,34 @@
+
+<section class="search-food">
+    <h3>Search Food</h3>
+    <input type="text" [(ngModel)]="searchTerm" name="searchTerm" id="searchBox">
+  </section>
+  
+  <div class="main-container">
+    <div class="new-container">
+  
+      <div class="add-food-container">
+        <h2> <span> AddNewFood </span></h2>
+        Name: <input type="text" name="name" [(ngModel)] = "newFoodName" id="name"><br><br>
+        Calories: <input type="text" name="cal" [(ngModel)] = "newFoodCalories" id="calories"> <br><br>
+        Image: <input type="text" name="img" [(ngModel)] = "newFoodImage" id="image"> <br><br>
+        <button type="button" (click) = "addFood()" id="newFood">Add Food</button> <br><br>
+      </div>
+  
+      <div class="display-food-container" id="displayContainer">
+          <ul class="items">
+            <li *ngFor="let item of items | foodSearch: searchTerm ">
+              <img src="{{item.image}}" alt=" {{item.name}}">
+              <div class="grid">
+                <p>{{item.name}}</p>
+                <p>Calory-<span class="color">{{item.calories}}</span></p>
+                <input #count  type="number">
+                <button class="add-btn" (click)="addCount(count.value,item); sendTotalCalories();">Add</button>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  
+  </div>
+  

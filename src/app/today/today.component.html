@@ -1,0 +1,14 @@
+
+<div class="table-position" id="totalCalories">
+    <div class="calorie-container"> 
+      <h2 >Today's Food calories: {{totalCalories}} </h2>
+      <ul class="items">
+        <!--here all items as well as count of each are displayed -->
+        <li *ngFor="let item of items">
+          {{item.name}} {{item.calories}}<span> x </span>{{item.count}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
